@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="content" align="center" >
+    <br>
+    <form  method="POST" align="center">
+            <input type="text" name="content" id="content" style="width:30%; padding:6px;">
+            <button type="submit" style="background-color: #152aa3; color:white;
+                padding:5px; width:7%;">Add Event</button>
+    </form>
+    <br>
+    <table style="padding:0px; background-color:white; width:70%; ">
+        <thead style="background-color: #c77919; width:100%; font-size:x-large;" align='center';>
+            <td>Event</td>
+            <td>Date</td>
+            <td>Action</td>
+        </thead>
+        <tbody align="center" style="background-color: #eea54b;">
+            {% for event in user.events %}
+            
+                <tr>
+                    <td>{{ event.content }}</td>
+                    <td>{{ event.due_date.date() }}  {{ event.due_date.time() }}</td>
+                    <td style="text-align:center;">
+                        <a href="/update/{{event.id}}" style="text-decoration:none; color:rgb(11, 34, 241); text-align:center">update</a>
+                        <br>
+                        <a href="/delete/{{event.id}}" style="text-decoration:none; color:rgb(179, 20, 20); text-align:center;">delete</a>
+                    </td>
+                  
+                </tr>
+            
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    
+</div>
+{% endblock %}
