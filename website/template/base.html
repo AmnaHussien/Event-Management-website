@@ -3,34 +3,23 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="../static/base.css">
         <title>{% block title %}Home{% endblock %}</title>
         
     </head>
     <body>
     
-        <nav class="navbar" style="background-color: #333; padding:10px 20px;" align="center">
-            <a href="#" class="navbar-logo"  style="color: white; font-size: 24px;
-                font-weight: bold; text-decoration: none; font-size:xx-large;" >Event Management</a>
+        <nav class="navbar"  align="center">
+            <a href="#" class="navbar-logo"  >Event Management</a>
                 
-                <div class="navbar-container" style="display:flex;
-                    justify-content: space-between;">
-                    <ul class="navbar-links" style="list-style:none; display: flex; 
-                        flex-direction:row; gap:20px; padding:0px; margin:0px;">
+                <div class="navbar-container" >
+                    <ul class="navbar-links" >
                         {% if user.is_authenticated %}
-                        <li ><a class="nav-item nav-link" id="home" href="/home" style="display: block; 
-                            background-color:#333; text-decoration:none;
-                                padding:10px; color:white; font-size:large; " align="center">Home</a></li>
-                        <li><a class="nav-item nav-link" id="logout" href="/logout" style="display: block;
-                            background-color:#333; text-decoration:none; padding:10px; color:white;
-                            text-align:right; font-size:large;">Logout</a></li>
+                        <li ><a class="nav-item nav-link" id="home" href="/home" align="center">Home</a></li>
+                        <li><a class="nav-item nav-link" id="logout" href="/logout">Logout</a></li>
                         {% else %}
-                        <li><a class="nav-item nav-link" id="login" href="/login"
-                                style="display: block;
-                            background-color:#333; text-decoration:none; padding:10px;
-                            color:white; font-size:large;">Login</a></li>
-                        <li><a class="nav-item nav-link" id="signUp" href="/signup" style="display: block;
-                            background-color:#333; text-decoration:none; padding:10px; color:white;
-                            text-align:right; font-size:large;">Signup</a></li>
+                        <li><a class="nav-item nav-link" id="login" href="/login">Login</a></li>
+                        <li><a class="nav-item nav-link" id="signUp" href="/signup">Signup</a></li>
                         {% endif %}
                 </ul>
                 </div>

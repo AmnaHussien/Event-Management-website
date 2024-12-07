@@ -5,25 +5,22 @@ Login | Event Management
 {% block content %}
 
     <form method="POST">
-        <h2 style="text-align: center; padding:20px 0px 0px 0px; ">Login User</h2>
+        <h2>Login User</h2>
         <div style="text-align:center; ">  
-            <label for="email" style="font-size: larger;">Enter Your E-mail</label>
-            
+            <label for="email" >Enter Your E-mail</label>
             <br>
-            <input type="email" id = "email" required name="email" style="width: 30%; padding:6px;">
+            <input type="email" id="email" required name="email" >
         </div>
         <br>
         <div style="text-align: center;">
-            <label for="pass" style="font-size: larger;">Enter Your Password</label>
+            <label for="pass" >Enter Your Password</label>
             <br>
             <input id="pass" type="password" 
-                required name="password" style="width: 30%; padding:6px;">
+                required name="password" >
         </div>
         <br>
         <div style="text-align: center; ">
-            <button type="submit" style="background-color: rgb(35, 35, 199);
-            color:white; width:7%;  padding:4px; font-size:larger;"> Login </button>
+            <button type="submit"> Login </button>
         </div>
-    
     </form>
 {% endblock %}

@@ -1,0 +1,17 @@
+h2
+{
+    text-align: center; padding:20px 0px 0px 0px;
+}
+div input
+{
+    width: 30%; padding:6px;
+}
+div label
+{
+    font-size: larger;
+}
+button
+{
+    background-color: rgb(35, 35, 199);
+    color:white; width:7%;  padding:4px; font-size:larger;
+}

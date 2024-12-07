@@ -7,7 +7,11 @@ from datetime import datetime
 
 views = Blueprint('views', __name__)
 
-@views.route('/', methods=['POST', 'GET'])
+@views.route('/',methods=['POST', 'GET'])
+def landing():
+    return render_template('landing.html')
+
+@views.route('/home', methods=['POST', 'GET'])
 @login_required
 def home():
     if request.method == 'POST':
