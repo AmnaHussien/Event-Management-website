@@ -9,15 +9,14 @@
         <li ><a class="nav-item nav-link" id="home" href="/home" align="center">Home</a></li>
         <li><a class="nav-item nav-link" id="logout" href="/logout">Logout</a></li>
         {% else %}
-        <li><a id="land-nav-item-link" class="nav-item nav-link" id="about" href="/login">login</a></li>
-        <li><a id="land-nav-item-link" class="nav-item nav-link" id="contact us" href="/signup">SignUp</a></li>
+        <a href="#" id="land-navbar-logo" clas="navbar-logo">Welcome To Event Management!!</a>
+        <a href="#"  id="land-navbar-logo" class="navbar-logo">Event Management</a>
         {% endif %}
 </ul>
 </div>
 </nav>
 {% endblock %}
-<h1>Welcome To Event Management!!</h1>
-<p>It`s a time to manage your Events</p>
+
 <div class="button-land">
    <a href="{{ url_for('auth.signup') }}"> <button id="button-land-1">New account</button></a> <p>or</p>
     <a href="{{ url_for('auth.login') }}"><button id="button-land-1">Login</button></a>

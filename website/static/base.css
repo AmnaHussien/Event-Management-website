@@ -3,6 +3,11 @@
 {
     background-color: #333; padding:10px 20px;
 }
+#land-navbar-logo
+{
+    color: white; font-size: 24px;
+    font-weight: bold; text-decoration: none; font-size:xx-large;
+}
 .navbar-logo
 {
     color: white; font-size: 24px;
