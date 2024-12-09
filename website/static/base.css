@@ -1,3 +1,4 @@
+/* base.css */
 .navbar
 {
     background-color: #333; padding:10px 20px;
@@ -22,4 +23,130 @@ div ul li
     display: block; 
     background-color:#333; text-decoration:none;
     padding:10px; color:white; font-size:large;
+}
+/* landing.css >>>>>>>>>>>>>>>>>>>>>>*/
+
+body
+{
+    background-image: url("2.jpg");
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: center;
+    font-family: sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+.land-navbar-logo
+{
+    color: white; font-size: 24px; font-weight: bold;
+    text-decoration: none; font-size:xx-large;
+    padding: 10px;
+    margin: 20px;
+}
+#land-nav-item-link
+{
+    display: block; background-color:#333;
+    text-decoration:none; padding:10px; 
+    color:white; font-size: larger;
+    text-align: right;
+    /* font-weight: bold; */
+}
+.land-navbar
+{
+    background-color: #333; padding:10px 20px; 
+}
+.land-navbar-container
+{
+    display:flex;
+    justify-content: space-between;
+}
+.land-navbar-links
+{
+    list-style:none; display: flex; 
+    flex-direction:row; gap:20px; padding:0px; margin:0px;
+}
+.copy
+{   text-align: end;
+    margin-top: 2px;
+    background-color: #222;
+    color: white;
+    padding: 6px;
+    font-size: 0.9em;
+}
+.button-land
+{
+    display:block;
+    text-align: center;
+    /* flex-direction: row; */
+}
+#button-land-1
+{
+/*    display: inline-block;
+    background-color: rgb(35, 35, 199);
+    color:white; width:7%;  padding:4px; font-size:larger;
+    text-align: center; */
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #033366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* div p
+{
+    color: black; font-size: 24px; font-weight: bold;
+    text-decoration: none; font-size:xx-large;
+    padding: 10px;
+    margin: 20px;
+} */
+
+/* home.css >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+table
+{
+    padding:0px; background-color:white; width:70%;
+}
+table thead
+{
+    background-color: #c77919; width:100%; font-size:x-large;
+}
+table tbody
+{
+    background-color: #eea54b;
+}
+#update
+{
+    text-decoration:none; color:rgb(11, 34, 241); text-align:center;
+}
+#delete
+{
+    text-decoration:none; color:rgb(179, 20, 20); text-align:center;
+}
+button
+{
+    background-color: #152aa3; color:white;
+    padding:5px; width:7%;
+}
+.content
+{
+    width:30%; padding:6px;
+}
+/* login.css &&& signup.css >>>>>>>>>>>>>>> */
+div h2
+{
+    text-align: center;
+}
+button
+{
+    background-color: rgb(16, 16, 221);
+    color:white; width:7%; padding:4px; font-size:larger;
+}
+div label
+{
+    font-size: larger;
+}
+div input
+{
+    width: 30%; padding:6px;
 }

@@ -9,7 +9,7 @@
     </head>
     <body>
     
-        <nav class="navbar"  align="center">
+        <!-- <nav class="navbar"  align="center">
             <a href="#" class="navbar-logo"  >Event Management</a>
                 
                 <div class="navbar-container" >
@@ -23,7 +23,27 @@
                         {% endif %}
                 </ul>
                 </div>
-        </nav>
+        </nav> -->
+        <nav id="land-navbar" class="navbar" align="center">
+          <a href="#" id="land-navbar-logo" class="navbar-logo">Welcome To Event Management</a>
+          <div id="land-navbar-container" class="navbar-container">
+              <ul id="land-navbar-links" class="navbar-links">
+                  <!-- <li><a class="nav-item nav-link" id="home" href="">Home</a></li> -->
+                  <li><a id="land-nav-item-link" class="nav-item nav-link" id="about" href="">About</a></li>
+                  <li><a id="land-nav-item-link" class="nav-item nav-link" id="contact us" href="">Contact Us</a></li>
+              </ul>
+          </div>
+      </nav>
+      <br>
+      <div class="button-land">
+          <button id="button-land-1">New account</button> <p>or</p>
+          <button id="button-land-1">Login</button>
+      </div>
+      <!-- <div><p>Don`t Have an accout !!</p></div> -->
+      <p>&copy; 2024 Event Manager. All Rights Reserved. </p>
+
+
+      
             {% with messages = get_flashed_messages(with_categories=true) %} {% if
                 messages %} {% for category, message in messages %} {% if category ==
                 'error' %}

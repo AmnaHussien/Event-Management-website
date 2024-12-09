@@ -1,30 +1,31 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Event Management</title>
         <link rel="stylesheet" href="../static/landing.css">
-    </head>
-    <body>
-            <nav class="navbar" align="center">
-                <a href="#" class="navbar-logo">Welcome To Event Management</a>
-                <div class="navbar-container">
-                    <ul class="navbar-links">
+    </head> -->
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+ <div class="landing-content">
+            <nav id="land-navbar" class="navbar" align="center">
+                <a href="#" id="land-navbar-logo" class="navbar-logo">Welcome To Event Management</a>
+                <div id="land-navbar-container" class="navbar-container">
+                    <ul id="land-navbar-links" class="navbar-links">
                         <!-- <li><a class="nav-item nav-link" id="home" href="">Home</a></li> -->
-                        <li><a class="nav-item nav-link" id="about" href="">About</a></li>
-                        <li><a class="nav-item nav-link" id="contact us" href="">Contact Us</a></li>
+                        <li><a id="land-nav-item-link" class="nav-item nav-link" id="about" href="">About</a></li>
+                        <li><a id="land-nav-item-link" class="nav-item nav-link" id="contact us" href="">Contact Us</a></li>
                     </ul>
                 </div>
             </nav>
             <br>
-            <div class="button">
-                <button>New account</button> <p>or</p>
-                <button>Login</button>
+            <div class="button-land">
+                <button id="button-land-1">New account</button> <p>or</p>
+                <button id="button-land-1">Login</button>
             </div>
             <!-- <div><p>Don`t Have an accout !!</p></div> -->
             <p>&copy; 2024 Event Manager. All Rights Reserved. </p>
-    </body>
-    
-    
-</html>
+ </div>
+ {% endblock %}
