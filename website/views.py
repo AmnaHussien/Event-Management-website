@@ -9,10 +9,8 @@ views = Blueprint('views', __name__)
 
 @views.route('/',methods=['POST', 'GET'])
 def landing():
-    # if :
-    #     return redirect(url_for("auth.login"))
-    #     return redirect(url_for("auth.signup"))
-    return render_template('landing.html')
+
+    return render_template('landing.html', user=current_user)
 
 @views.route('/home', methods=['POST', 'GET'])
 @login_required
