@@ -7,25 +7,25 @@
         <link rel="stylesheet" href="../static/landing.css">
     </head> -->
 {% extends 'base.html' %}
-{% block title %}Home{% endblock %}
+{% block title %}Welcome To Event Management{% endblock %}
 {% block content %}
- <div class="landing-content">
-            <nav id="land-navbar" class="navbar" align="center">
-                <a href="#" id="land-navbar-logo" class="navbar-logo">Welcome To Event Management</a>
-                <div id="land-navbar-container" class="navbar-container">
-                    <ul id="land-navbar-links" class="navbar-links">
-                        <!-- <li><a class="nav-item nav-link" id="home" href="">Home</a></li> -->
-                        <li><a id="land-nav-item-link" class="nav-item nav-link" id="about" href="">About</a></li>
-                        <li><a id="land-nav-item-link" class="nav-item nav-link" id="contact us" href="">Contact Us</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <br>
+<!-- <div class="navbar-container">
+    <ul class="navbar-links" >
+        {% if user.is_authenticated %}
+        <li ><a class="nav-item nav-link" id="home" href="/home" align="center">Home</a></li>
+        <li><a class="nav-item nav-link" id="logout" href="/logout">Logout</a></li>
+        {% else %}
+        <li><a id="land-nav-item-link" class="nav-item nav-link" id="about" href="/login">login</a></li>
+        <li><a id="land-nav-item-link" class="nav-item nav-link" id="contact us" href="/signup">SignUp</a></li>
+        <li><a class="nav-item nav-link" id="login" href="/login">Login</a></li>
+        <li><a class="nav-item nav-link" id="signUp" href="/signup">Signup</a></li>
+        {% endif %}
+</ul>
+</div> -->
             <div class="button-land">
                 <button id="button-land-1">New account</button> <p>or</p>
                 <button id="button-land-1">Login</button>
             </div>
-            <!-- <div><p>Don`t Have an accout !!</p></div> -->
-            <p>&copy; 2024 Event Manager. All Rights Reserved. </p>
- </div>
+            <div><p>Don`t Have an accout !!</p></div>
+            
  {% endblock %}
