@@ -7,25 +7,15 @@
         <link rel="stylesheet" href="../static/landing.css">
     </head> -->
 {% extends 'base.html' %}
-{% block title %}Welcome To Event Management{% endblock %}
+{% block title %}{% endblock %}
 {% block content %}
-<!-- <div class="navbar-container">
-    <ul class="navbar-links" >
-        {% if user.is_authenticated %}
-        <li ><a class="nav-item nav-link" id="home" href="/home" align="center">Home</a></li>
-        <li><a class="nav-item nav-link" id="logout" href="/logout">Logout</a></li>
-        {% else %}
-        <li><a id="land-nav-item-link" class="nav-item nav-link" id="about" href="/login">login</a></li>
-        <li><a id="land-nav-item-link" class="nav-item nav-link" id="contact us" href="/signup">SignUp</a></li>
-        <li><a class="nav-item nav-link" id="login" href="/login">Login</a></li>
-        <li><a class="nav-item nav-link" id="signUp" href="/signup">Signup</a></li>
-        {% endif %}
-</ul>
-</div> -->
-            <div class="button-land">
-                <button id="button-land-1">New account</button> <p>or</p>
-                <button id="button-land-1">Login</button>
-            </div>
-            <div><p>Don`t Have an accout !!</p></div>
+<h1>Welcome To Event Management!!</h1>
+<p>It`s a time to manage your Events</p>
+<div class="button-land">
+   <a href="{{ url_for('auth.signup') }}"> <button id="button-land-1">New account</button></a> <p>or</p>
+    <a href="{{ url_for('auth.login') }}"><button id="button-land-1">Login</button></a>
+</div>
+
+            
             
  {% endblock %}

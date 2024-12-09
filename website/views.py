@@ -12,7 +12,7 @@ def landing():
     # if :
     #     return redirect(url_for("auth.login"))
     #     return redirect(url_for("auth.signup"))
-    return render_template('base.html')
+    return render_template('landing.html')
 
 @views.route('/home', methods=['POST', 'GET'])
 @login_required
