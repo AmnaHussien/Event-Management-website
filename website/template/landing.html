@@ -1,21 +1,21 @@
 {% extends 'base.html' %}
 {% block title %}{% endblock %}
 {% block content %}
-{% block nav %}
-<nav id="land-nav">
-<div class="navbar-container">
-    <ul class="navbar-links" >
-        {% if user.is_authenticated %}
-        <li ><a class="nav-item nav-link" id="home" href="/home" align="center">Home</a></li>
-        <li><a class="nav-item nav-link" id="logout" href="/logout">Logout</a></li>
-        {% else %}
-        <a href="#" id="land-navbar-logo" class="navbar-logo">Welcome To Event Management!!</a>
-        <a href="#"  id="land-navbar-logo" class="navbar-logo">Event Management</a>
-        {% endif %}
-</ul>
-</div>
-</nav>
-{% endblock %}
+    {% block nav %}
+
+    <div class="navbar-container">
+        <ul class="navbar-links" >
+            {% if user.is_authenticated %}
+            <li ><a class="nav-item nav-link" id="home" href="/home" align="center">Home</a></li>
+            <li><a class="nav-item nav-link" id="logout" href="/logout">Logout</a></li>
+            {% else %}
+            <a href="#" id="land-navbar-logo" class="navbar-logo">Welcome To Event Management!!</a>
+            <a href="#" id="land-navbar-logo" class="navbar-logo">Manage Your Events , Manage Your Time</a>
+            {% endif %}
+        </ul>
+    </div>
+
+    {% endblock %}
 
 <div class="button-land">
    <a href="{{ url_for('auth.signup') }}"> <button id="button-land-1">New account</button></a> <p>or</p>

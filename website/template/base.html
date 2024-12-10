@@ -8,8 +8,9 @@
         
     </head>
     <body>
-    {% block nav %}
+    
         <nav class="navbar"  align="center">
+          {% block nav %}
             <a href="#" class="navbar-logo">Event Management</a>
             <div class="navbar-container" >
                     <ul class="navbar-links" >
@@ -17,9 +18,10 @@
                         <li><a class="nav-item nav-link" id="base" href="#">About</a></li>
                         <li><a class="nav-item nav-link" id="base" href="#">Contact Us</a></li>
                     </ul>
-                </div>          
+                </div>  
+          {% endblock%}        
         </nav>
-    {% endblock%}
+          
             {% with messages = get_flashed_messages(with_categories=true) %} {% if
                 messages %} {% for category, message in messages %} {% if category ==
                 'error' %}
