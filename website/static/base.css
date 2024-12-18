@@ -43,7 +43,7 @@ div ul
 body
 {
     /* background-image: url("2.jpg"); */
-    background-color: purple;
+    background-color: rgb(219, 107, 219);
     background-size: cover;
     box-sizing: border-box;
     background-position: center;
@@ -107,30 +107,39 @@ body
 }
 #button-land-1
 {
-    display: block;
+    display: inline-block;
     text-align: center;
-    text-decoration: none;
+    
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 1.2em;
     background-color: #033366;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 #button-land-2
 {
-    display: block;
+    display: inline-block;
     text-align: center; 
     margin-top: 20px;
-    text-decoration: none;
     padding: 10px 20px;
     font-size: 1.2em;
     background-color: #033366;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
 }
+#or
+{
+    color: black; font-size: 24px; font-weight: bold;
+    font-size:medium;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    margin: 20px;
+} 
+
 #copy
 {
     color: black; font-size: 24px; font-weight: bold;
