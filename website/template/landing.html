@@ -3,17 +3,17 @@
 {% block content %}
     {% block nav %}
 
-    <div class="navbar-container">
+    <!-- <div class="navbar-container"> -->
         <ul class="navbar-links" >
             {% if user.is_authenticated %}
             <li ><a class="nav-item nav-link" id="home" href="/home" align="center">Home</a></li>
             <li><a class="nav-item nav-link" id="logout" href="/logout">Logout</a></li>
             {% else %}
-            <a href="#" id="land-navbar-logo" class="navbar-logo">Welcome To Event Management!!</a>
-            <a href="#" id="land-navbar-logo" class="navbar-logon">Manage Your Events , Manage Your Time</a>
+            <a href="#" id="land-navbar-logo1" class="navbar-logo">Welcome To Event Management!!</a>
+            <a href="#" id="land-navbar-logo2" class="navbar-logon">Manage Your Events , Manage Your Time</a>
             {% endif %}
         </ul>
-    </div>
+    <!-- </div> -->
 
     {% endblock %}
 
