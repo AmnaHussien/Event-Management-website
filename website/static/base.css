@@ -108,7 +108,8 @@ body
 #button-land-1
 {
     display: block;
-    text-align: center; 
+    text-align: center;
+    text-decoration: none;
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 1.2em;
@@ -117,13 +118,27 @@ body
     text-decoration: none;
     border-radius: 5px;
 }
-/* div p
+#button-land-2
+{
+    display: block;
+    text-align: center; 
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #033366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#copy
 {
     color: black; font-size: 24px; font-weight: bold;
-    text-decoration: none; font-size:xx-large;
+    text-decoration: none; font-size:medium;
+    text-align: center;
     padding: 10px;
     margin: 20px;
-} */
+} 
 
 /* home.css >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 table
