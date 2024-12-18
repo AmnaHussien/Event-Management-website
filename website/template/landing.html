@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
 {% block title %}{% endblock %}
-{% block content %}
-    {% block nav %}
+{% block nav %}
 
     <!-- <div class="navbar-container"> -->
         <ul class="navbar-links" >
@@ -15,10 +14,12 @@
         </ul>
     <!-- </div> -->
 
-    {% endblock %}
+{% endblock %}
 
-<div class="button-land">
-   <a href="{{ url_for('auth.signup') }}"> <button id="button-land-1">New account</button></a> <p>or</p>
-    <a href="{{ url_for('auth.login') }}"><button id="button-land-1">Login</button></a>
-</div>      
+{% block content %}
+    
+<!-- <div class="button-land"> -->
+   <a href="{{ url_for('auth.signup') }}" align="center"> <button id="button-land-1">New account</button></a> <p>or</p>
+    <a href="{{ url_for('auth.login') }}" align="center"><button id="button-land-1">Login</button></a>
+<!-- </div>       -->
  {% endblock %}
