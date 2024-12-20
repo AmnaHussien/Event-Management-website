@@ -38,6 +38,21 @@ div ul
     background-color:#333; text-decoration:none;
     padding:10px; color:white; font-size:x-large;
 }
+
+#about
+{
+    display: block; 
+    background-color:#333; text-decoration:none;
+    padding:10px; color:white; font-size:x-large;
+}
+
+#contact
+{
+    display: block; 
+    background-color:#333; text-decoration:none;
+    padding:10px; color:white; font-size:x-large;
+}
+
 /* landing.css >>>>>>>>>>>>>>>>>>>>>>*/
 
 body
