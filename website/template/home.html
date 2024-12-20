@@ -4,8 +4,11 @@
 <div class="content" align="center" >
     <br>
     <form  method="POST" align="center">
+        <div>
             <input type="text" name="content" id="content" >
-            <button type="submit" >Add Event</button>
+            <button type="submit" id="button" >add</button>
+        </div>
+            
     </form>
     <br>
     <table id="table">
@@ -16,13 +19,13 @@
         </thead>
         <tbody align="center" id="tbody">
             {% for event in user.events %}
-                <tr>
+                <tr id="table-row">
                     <td>{{ event.content }}</td>
                     <td>{{ event.due_date.date() }}  {{ event.due_date.time() }}</td>
                     <td style="text-align:center;">
-                        <a class="update" href="/update/{{event.id}}" >update</a>
+                        <a id="update" href="/update/{{event.id}}" >update</a>
                         <br>
-                        <a class="delete" href="/delete/{{event.id}}" >delete</a>
+                        <a id="delete" href="/delete/{{event.id}}" >delete</a>
                     </td>
                   
                 </tr>
