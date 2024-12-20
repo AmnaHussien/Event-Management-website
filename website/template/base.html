@@ -14,13 +14,17 @@
             <a href="#" class="navbar-logo">Event Management</a>
             <div class="navbar-container" >
                     <ul class="navbar-links" >
+                      {% if user.is_authenticated %}
+                      <li ><a class="nav-item nav-link" id="base" href="{{ url_for('views.home') }}" align="center">Home</a></li>
+                      <li><a class="nav-item nav-link" id="base" href="{{ url_for('auth.logout') }}">Logout</a></li>
+                      {% else %}
                         <li ><a class="nav-item nav-link" id="base"
                           href="{{ url_for('views.landing') }}" align="center">Home</a></li>
-                          
-                        <li><a class="nav-item nav-link" id="about" href="{{ url_for('views.about') }}">About</a></li>
-                        <li><a class="nav-item nav-link" id="contact" href="#">Contact Us</a></li>
+                        <li><a class="nav-item nav-link" id="base" href="{{ url_for('views.about') }}">About</a></li>
+                        <li><a class="nav-item nav-link" id="base" href="#">Contact Us</a></li>
+                      {% endif%}
                     </ul>
-            </div>  
+            </div>
           {% endblock%}        
         </nav>
           

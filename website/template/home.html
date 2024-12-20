@@ -8,13 +8,13 @@
             <button type="submit" >Add Event</button>
     </form>
     <br>
-    <table>
-        <thead align='center';>
+    <table id="table">
+        <thead align='center' id="thead">
             <td>Event</td>
             <td>Date</td>
             <td>Action</td>
         </thead>
-        <tbody align="center" >
+        <tbody align="center" id="tbody">
             {% for event in user.events %}
                 <tr>
                     <td>{{ event.content }}</td>

@@ -165,15 +165,15 @@ body
 } 
 
 /* home.css >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-table
+#table
 {
     padding:0px; background-color:white; width:70%;
 }
-table thead
+#thead
 {
     background-color: #c77919; width:100%; font-size:x-large;
 }
-table tbody
+#tbody
 {
     background-color: #eea54b;
 }
@@ -185,11 +185,7 @@ table tbody
 {
     text-decoration:none; color:rgb(179, 20, 20); text-align:center;
 }
-button
-{
-    background-color: #152aa3; color:white;
-    padding:5px; width:7%;
-}
+
 .content
 {
     width:30%; padding:6px;
