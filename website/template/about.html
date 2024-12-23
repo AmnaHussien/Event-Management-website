@@ -3,13 +3,15 @@
 About
 {% endblock %}
 {% block content %}
-<br>
+
 <form method="POST">
-    <div>
+    <div class="about">
         <h2>About Event Management</h2>
         <h3>Our Event Management platform simplifies planning, organizing,
-            and managing events for individuals, businesses, and organizations</h3>
+            and <br> managing events for individuals, businesses, and organizations</h3>
     </div>
+    <a href="{{ url_for('auth.signup') }}" > <button id="button-land-1">signup for free</button></a> <p id="or">or</p>
+    <a href="{{ url_for('auth.login') }}" ><button id="button-land-2">Login</button></a>
 
 
 </form>

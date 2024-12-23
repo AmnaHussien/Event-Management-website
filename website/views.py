@@ -12,7 +12,7 @@ def landing():
 
     return render_template('landing.html', user=current_user)
 
-@views.route('/',methods=['POST', 'GET'])
+@views.route('/about',methods=['POST', 'GET'])
 def about():
 
     return render_template('about.html', user=current_user)

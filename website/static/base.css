@@ -215,3 +215,7 @@ div input
 {
     width: 30%; padding:8px;
 }
+.about
+{
+    background-color: rgb(238, 144, 238);
+}
