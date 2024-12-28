@@ -4,10 +4,13 @@
 <div class="content" align="center" >
     <br>
     <form  method="POST" align="center">
-        <div>
+        <div align="center">
             <label for="content"> Event update</label>
+            <br>
             <input type="content" id="content" name="content">
         </div>
     </form>
-    <button><a href="{{ url_for('views.home') }}"></a></button>
+    <a href="{{ url_for('views.home') }}"><button id="button">update</button></a>
+    
 </div>
+{% endblock %}
