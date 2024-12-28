@@ -54,16 +54,15 @@ def delete(id):
 @login_required
 def update(id):
     # task_id = task.query.get_or_400(id)
-    # if request.method =='POST':
-        content = request.form.get('content')
+    if request.method =='POST':
+        Event.content = request.form.get('content')
         if len(content) < 1  or not content:
             flash('conent is require', category='error')
         elif len(content) > 50:
             flash('Error the content is too long', category='error')
         else:
-            return(render_template('update.html'))
-            event.content=content
             db.session.commit()
             flash('Event updated successfully', category='successfull') # i need to use try and except****
-            return redirect(url_for('views.home'))
+            return redirect(url_for('views.update'))
+    return(render_template('update.html'))
 #this route accept id as parameter
