@@ -223,3 +223,7 @@ div input
 {
     color: white;
 }
+#updated-event
+{
+    width: 30%; padding:8px;
+}

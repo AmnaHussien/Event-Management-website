@@ -56,14 +56,19 @@ def update(id):
     # task_id = task.query.get_or_400(id)
     if request.method =='POST':
         content = request.form.get('content')
+
         if len(content) < 1  or not content:
             flash('conent is require', category='error')
         elif len(content) > 50:
             flash('Error the content is too long', category='error')
         else:
             Event.content=content
-            db.session.commit()
-            flash('Event updated successfully', category='successfull') # i need to use try and except****
-            return redirect(url_for('views.update'))
+            try:
+                db.session.commit()
+                flash('Event updated successfully', category='successfull') # i need to use try and except****
+                return redirect(url_for('views.update'))
+            except Exception as e:
+                flash('Error with updating event', category='error')
+                return redirect(url_for('views.home'))
     return(render_template('update.html', user=current_user))
 #this route accept id as parameter
