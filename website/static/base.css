@@ -125,9 +125,9 @@ body
 {
     display: inline-block;
     text-align: center;
-    
+    width:10%;
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 1.2em;
     background-color:rgb(90, 3, 90);
     color: white;
@@ -148,8 +148,8 @@ body
 }
 #or
 {
-    color: black; font-size: 24px; font-weight: bold;
-    font-size:medium;
+    color: rgb(90, 3, 90); font-size: 24px; font-weight: bold;
+    font-size:larger;
     text-align: center;
     display: inline-block;
     padding: 10px;

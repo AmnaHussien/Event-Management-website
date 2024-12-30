@@ -3,7 +3,7 @@
 About
 {% endblock %}
 {% block content %}
-<form method="GET, POST">
+<form method="POST">
    <!--<div class="about">
         <h2>Welcome to Event Management</h2>
          <h3>Our Event Management platform simplifies planning, organizing,
@@ -18,8 +18,9 @@ About
             perfectly organized. Our platform is designed to simplify event management, 
             whether you're planning a small gathering, a large corporate conference, or anything in between.
             </p>
-            <a href="{{ url_for('auth.signup') }}"><button id="button-land-1">Get Started</button></a> 
+            <a href="{{ url_for('auth.signup') }}" id="button-land-1">Get Started</a> 
             
+
     </header>
     <section class="about-section">
         <div class="content">
