@@ -128,7 +128,7 @@ body
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 1.2em;
-    background-color: #033366;
+    background-color:rgb(90, 3, 90);
     color: white;
     text-decoration: none;
     border-radius: 10px;
@@ -140,7 +140,7 @@ body
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 1.2em;
-    background-color: #033366;
+    background-color: rgb(90, 3, 90);
     color: white;
     text-decoration: none;
     border-radius: 10px;
@@ -196,14 +196,14 @@ body
 {
     width:50%; padding: 6px;   
 }
-/* login.css &&& signup.css >>>>>>>>>>>>>>> */
+/* login.css &&& signup.css && about>>>>>>>>>>>>>>> */
 div h2
 {
     text-align: center;
 }
 button
 {
-    background-color: rgb(16, 16, 221);
+    background-color: rgb(90, 3, 90);
     color:white; width:7%; padding:4px; font-size:larger;
 }
 div label
@@ -214,11 +214,7 @@ div input
 {
     width: 30%; padding:8px;
 }
-.about
-{
-    background-color: rgb(90, 3, 90);
-    color: white;
-}
+
 /* update.ss>>>>>>>>>>>>>>>> */
 .update
 {
@@ -227,4 +223,31 @@ div input
 #updated-event
 {
     width: 30%; padding:8px;
+}
+/* about >>>>>>>>*/
+.about
+{
+    background-color: rgb(219, 107,219);
+    color: white;
+}
+.abou
+{
+    background-color: #cfcfce;
+    text-align: left;
+    padding-left: 40px;;
+}
+#par
+{
+    font-size: larger;
+    font-family: sans-serif;
+}
+#para
+{
+    /* font-size: large;
+    font-family: sans-serif;
+    text-align: justify; */
+    line-height: 1.6; /* Line spacing */
+    margin-bottom: 20px; /* Space between paragraphs */
+    text-indent: 20px; /* Indent first line */
+    word-wrap: break-word; /* Handle long words */
 }
