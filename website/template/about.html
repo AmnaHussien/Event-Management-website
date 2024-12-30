@@ -12,45 +12,56 @@ About
         <a href="{{ url_for('auth.signup') }}" > <button id="button-land-1">Get Started</button></a> <p id="or">or</p>
         <a href="{{ url_for('auth.login') }}" ><button id="button-land-2">Login</button></a>
     </div>
-    <div class="abou" >
-        <p id="par">About Us </p>
-       <p id="para" align="center"> welcome to <span>Event Management</span>
-    ,at <span>Event Management</span>, we believe every event deserves to be memorable, stress-free and <br>
-    perfectly organized. Our platform is designed to simplify event management, 
-    whether you're planning a small gathering,<br> a large corporate conference, or anything in between.
-    </p>
-            <p>What We Do? <br>
-Our platform provides an all-in-one solution for event organizers and attendees.<br> With our tools, you can:
-
-<li>Create and Manage Events: <br>From setting dates to managing registrations, we’ve got you covered.</li>
-<li>Collaborate with teams: <br> Assign tasks, track progress, and ensure nothing gets missed.</li>
-<li>Track Event Success: <br> Access detailed analytics to measure your event's impact.</li>
+    <header class="header">
+            <h1>About Us</h1>
+            <p id="para" align="center"> welcome to  Event Management
+            ,at Event Management, we believe every event deserves to be memorable, stress-free and 
+            perfectly organized.<br> Our platform is designed to simplify event management, 
+            whether you're planning a small gathering, a large corporate conference, or anything in between.
             </p>
-<p>
-    Our Mission
-To empower individuals and organizations with intuitive tools to 
-create unforgettable events while saving time, reducing stress, and maximizing impact.
-</p>
-<p>
-    Why Choose Us?
-User-Friendly Design: Easy-to-use interface for both event organizers and attendees.
-Customizable Features: Tailor events to suit your unique needs and preferences.
-Secure and Reliable: Your data is safe with us, and our system ensures a smooth experience.
-24/7 Support: Our team is always ready to help, ensuring your events run without a hitch.
-</p>
-<p>
-    Join Our Community
-Thousands of event planners, businesses, and individuals trust [Your Website Name] to turn their 
-ideas into successful events. Let us help you make your next event a resounding success!
-</p>
-<p>
-    Contact Us
-Have questions or feedback? Reach out to us anytime!
-📧 Email: [your-email@example.com]
-📞 Phone: [Your Contact Number]
-🌐 Website: [Your Website URL]
-
-</p>
-    </div>
+    </header>
+    <section class="about-section">
+        <div class="content">
+            <h2> We Do? </h2>
+            <br>
+            <p>Our platform provides an all-in-one solution for event organizers and attendees. With our tools, you can:
+            Create and Manage Events: From setting dates to managing registrations, we have got you covered.
+            Collaborate with teams: Assign tasks, track progress, and ensure nothing gets missed.
+            Track Event Success: Access detailed analytics to measure your event's impact.
+            </p>
+        </div>
+        <div class="content">
+            <h2>Our Mission</h2>
+            <p>
+                To empower individuals and organizations with intuitive tools to 
+                create unforgettable events while saving time, reducing stress, and maximizing impact.
+            </p>
+        </div>
+        <div class="content">
+            <h2>Why Choose Us?</h2>
+            <p>
+            User-Friendly Design: Easy-to-use interface for both event organizers and attendees.
+            Customizable Features: Tailor events to suit your unique needs and preferences.
+            Secure and Reliable: Your data is safe with us, and our system ensures a smooth experience.
+            24/7 Support: Our team is always ready to help, ensuring your events run without a hitch.
+            </p>
+        </div>
+        <div class="content">
+            <h2>Join Our Community</h2>
+            <p>
+                Thousands of event planners, businesses, and individuals trust [Your Website Name] to turn their 
+                ideas into successful events. Let us help you make your next event a resounding success!
+            </p>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Contact Us
+        Have questions or feedback? Reach out to us anytime!
+        📧 Email: [your-email@example.com]
+        📞 Phone: [Your Contact Number]
+        🌐 Website: [Your Website URL]
+    </p>
+    </footer>
+    
 </form>
 {% endblock %}
