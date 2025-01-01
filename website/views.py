@@ -53,21 +53,22 @@ def delete(id):
 @views.route('/update/<int:id>', methods=['POST', 'GET'])
 @login_required
 def update(id):
-    # task_id = task.query.get_or_400(id)
+    Event_id = Event.query.get_or_404(id)
     if request.method =='POST':
         content = request.form.get('content')
-        Event.content=content
+
         if len(content) < 1  or not content:
             flash('conent is require', category='error')
         elif len(content) > 50:
             flash('Error the content is too long', category='error')
         else:
             try:
+                Event_id.content=content
                 db.session.commit()
-                flash('Event updated successfully', category='successfull') # i need to use try and except****
+                flash('Event updated successfully', category='success') # i need to use try and except****
                 return redirect(url_for('views.home'))
             except Exception as e:
                 flash('Error with updating event', category='error')
                 return redirect(url_for('views.home'))
-    return(render_template('update.html', user=current_user))
+    return(render_template('update.html', user=current_user, Event=Event_id))
 #this route accept id as parameter
