@@ -28,8 +28,8 @@ def home():
             new_event = Event(content=content,user_id=current_user.id)
             db.session.add(new_event)
             db.session.commit()
-            flash('Event added Successfully!',category='successfull')
-    
+            flash('Event added Successfully!', category='successfull')
+            return redirect(url_for('views.home'))
     return render_template('home.html', user=current_user)
 
 
