@@ -16,6 +16,9 @@ def landing():
 def about():
     
     return render_template('about.html', user=current_user)
+# @views.route('/', methods=['POST', 'GET'])
+# def home_page():
+#     return render_template('home_page.html', user=current_user)
 
 @views.route('/home', methods=['POST', 'GET'])
 @login_required

@@ -1,24 +1,24 @@
 {% extends 'base.html' %}
 {% block title %}{% endblock %}
 {% block nav %}
-
-        <!-- <ul class="navbar-links" >
-            {% if user.is_authenticated %}
-            <li ><a class="nav-item nav-link" id="home" href="/home" align="center">Home</a></li>
-            <li><a class="nav-item nav-link" id="logout" href="/logout">Logout</a></li>
-            {% else %} -->
-            <a href="#" id="land-navbar-logo1" class="navbar-logo">Welcome To Event Management!!</a>
-            <a href="#" id="land-navbar-logo2" class="navbar-logon">Manage Your Events, Manage Your Time</a>
-            <!-- {% endif %}
-        </ul> -->
-
-{% endblock %}
-
-{% block content %}
-    
+<a href="#" id="land-navbar-logo1" class="navbar-logo">Event Management</a>
 <br>
-<br>
-<a href="{{ url_for('auth.signup') }}"> <button id="button-land-1">New account</button></a> <p id="or">or</p>
-<a href="{{ url_for('auth.login') }}" ><button id="button-land-2">Login</button></a>
-
+<ul class="navbar-links">
+  <li><a  id="base" href="#">Home</a></li>
+  <li><a  id="base" href="{{ url_for('views.about') }}">About</a></li>
+  <li><a  id="base" href="#">Contact Us</a></li>
+</ul> 
+<ul class="navbar-links2">
+  <li ><a href="{{ url_for('auth.signup') }}" id="base"> Sign up</a></li>
+  <li ><a href="{{ url_for('auth.login') }}" id="base">login</a></li>
+</ul> 
  {% endblock %}
+{% block content %}
+<header class="header">
+  <h1>Welcome To Event Management!!</h1>
+  <p id="para" > Manage Your Events, Manage Your Time</p>
+  <a href="{{ url_for('auth.signup') }}" id="button-land-1">Get Started</a> 
+</header>
+<a href="#" id="land-navbar-logo1" class="navbar-logo"></a>
+<a href="#" id="land-navbar-logo2" class="navbar-logon"></a>
+{% endblock %}

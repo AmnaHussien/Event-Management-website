@@ -8,21 +8,41 @@
         
     </head>
     <body>
-        <nav class="navbar"  align="center">
+        <nav class="navbar" align="center">
           {% block nav %}
-            <a href="#" class="navbar-logo">Event Management</a>
-            <div class="navbar-container" >
-                    <ul class="navbar-links" >
+            <a href="#" class="navbar-logo" align="center">Event Management</a>
+            <div class="navbar-container">
+              
+        <!-- <br>
+        <ul class="navbar-links">
+          <li><a  id="base" href="#">Home</a></li>
+          <li><a  id="base" href="{{ url_for('views.about') }}">About</a></li>
+          <li><a  id="base" href="#">Contact Us</a></li>
+          
+        </ul> 
+        <ul class="navbar-links2">
+          <li ><a href="{{ url_for('auth.signup') }}" id="base"> Sign up</a></li>
+          <li ><a href="{{ url_for('auth.login') }}" id="base">login</a></li>
+        </ul> -->
+                    
                       {% if user.is_authenticated %}
-                      <li ><a class="nav-item nav-link" id="base" href="{{ url_for('views.home') }}" align="center">Home</a></li>
-                      <li><a class="nav-item nav-link" id="base" href="{{ url_for('auth.logout') }}">Logout</a></li>
+                      <ul class="navbar-links" >
+                        <li ><a class="nav-item nav-link" id="base" href="{{ url_for('views.home') }}" >Home</a></li>
+                        <li><a class="nav-item nav-link" id="base" href="{{ url_for('auth.logout') }}">Logout</a></li>
+                      </ul>
                       {% else %}
+                      <ul class="navbar-links">
                         <li ><a class="nav-item nav-link" id="base"
                           href="{{ url_for('views.landing') }}" align="center">Home</a></li>
                         <li><a class="nav-item nav-link" id="base" href="{{ url_for('views.about') }}">About</a></li>
                         <li><a class="nav-item nav-link" id="base" href="#">Contact Us</a></li>
+                      </ul>
+                      <ul class="navbar-links2">
+                        <li ><a href="{{ url_for('auth.signup') }}" id="base"> Sign up</a></li>
+                        <li ><a href="{{ url_for('auth.login') }}" id="base">login</a></li>
+                      </ul>
                       {% endif%}
-                    </ul>
+                    
             </div>
           {% endblock%}        
         </nav>
