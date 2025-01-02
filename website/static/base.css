@@ -33,6 +33,12 @@
     list-style:none; display: flex; 
     flex-direction:row; gap:20px; padding:0px; margin:0px;
 } */
+ .contact-info
+ {
+    list-style:none; display: flex;
+    flex-direction:column; gap:20px; padding:0px; margin:0px;
+    justify-content: flex-start;
+ }
 .navbar-links
 {
     list-style:none; display: flex;
