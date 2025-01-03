@@ -343,6 +343,15 @@ div input
     margin-top: 50px;
     font-size: 0.9rem;
 }
+.footer-contact
+{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(219, 107, 219);
+    color: #fff;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
 .footer a {
     color: #1abc9c;
     text-decoration: none;
