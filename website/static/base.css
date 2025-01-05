@@ -309,6 +309,11 @@ div input
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.add
+{
+    color: rgb(65, 4, 65);
+    font-size: large;
+}
 .about-section .content
 {
     margin-bottom: 30px;
