@@ -2,17 +2,17 @@
 {% block title %}{% endblock %}
 {% block nav %}
 <a href="#" id="land-navbar-logo1" class="navbar-logo">Event Management</a>
-<br>
 <ul class="navbar-links">
   <li><a  id="base" href="#">Home</a></li>
   <li><a  id="base" href="{{ url_for('views.about') }}">About</a></li>
   <li><a  id="base" href="{{ url_for('views.contact') }}">Contact Us</a></li>
 </ul> 
 <ul class="navbar-links2">
-  <li ><a href="{{ url_for('auth.signup') }}" id="base"> Sign up</a></li>
+  <li ><a href="{{ url_for('auth.signup') }}" id="base">Sign up</a></li>
   <li ><a href="{{ url_for('auth.login') }}" id="base">login</a></li>
 </ul> 
- {% endblock %}
+
+{% endblock %}
 {% block content %}
 <header class="header">
   <h1>Welcome To Event Management!!</h1>

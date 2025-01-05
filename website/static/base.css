@@ -2,7 +2,6 @@
 .navbar
 {
     background-color: rgb(90, 3, 90); padding:10px 20px;
-
 }
 #land-nav
 {
@@ -29,8 +28,8 @@
     justify-content: space-between;
 }
 
- .contact-info
- {
+.contact-info
+{
     list-style:none; display: flex;
     flex-direction:column; gap:30px; padding:20px; margin:10px;
     justify-content: flex-start;
@@ -38,14 +37,16 @@
 .navbar-links
 {
     list-style:none; display: flex;
-    flex-direction:row; gap:10px; padding:0px; margin:0px;
+    flex-direction:row; 
+    gap:10px; padding:0px; margin:0px;
     justify-content: flex-start;
 
 }
 .navbar-links2
 {
     list-style:none; display: flex; 
-    flex-direction:row; gap:20px; padding:0px; margin:0px;
+    flex-direction:row;
+    gap:20px; padding:0px; margin:0px;
     justify-content: flex-end;
 }
 
