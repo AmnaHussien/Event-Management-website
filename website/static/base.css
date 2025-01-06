@@ -310,15 +310,7 @@ div input
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.about-section-accounts
-{
-    max-width: 700px;
-    margin: 50px auto;
-    padding: 20px;
-    background: #f7f5f5;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+
 .add
 {
     color: rgb(65, 4, 65);
