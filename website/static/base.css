@@ -2,7 +2,7 @@
 .navbar
 {
     background-color: rgb(90, 3, 90); padding:10px 20px;
-}
+} 
 #land-nav
 {
     background-color: rgb(90, 3, 90); padding:10px 10px;
@@ -34,7 +34,7 @@
     flex-direction:column; gap:30px; padding:20px; margin:10px;
     justify-content: flex-start;
  }
-.navbar-links
+.nav-left
 {
     list-style:none; display: flex;
     flex-direction:row; 
@@ -42,14 +42,33 @@
     justify-content: flex-start;
 
 }
-.navbar-links2
+.nav-right
 {
     list-style:none; display: flex; 
     flex-direction:row;
+   gap:20px; padding:0px; margin:0px;
+    justify-content: flex-end;
+}
+.land-navbar
+{
+    display: flex;
+    justify-content: space-between; /* Align left and right sections */
+    align-items: center; /* Vertically center items */
+    background-color: rgb(90, 3, 90); padding:10px 20px
+}
+.land-nav-left
+{
+    display: flex; 
+    gap:10px; padding:0px; margin:0px;
+    justify-content: flex-start;
+
+}
+.land-nav-right
+{
+    display: flex; 
     gap:20px; padding:0px; margin:0px;
     justify-content: flex-end;
 }
-
 #base
 {
     background-color:rgb(90, 3, 90); text-decoration:none;
@@ -100,7 +119,8 @@ body
     text-align: center;
     padding: 10px;
     margin: 20px;
-    display: block;
+    display: block;     
+
 }
 #land-nav-item-link
 {
@@ -108,7 +128,7 @@ body
     text-decoration:none; padding:10px; 
     color:white; font-size: larger;
     text-align: right;
-    /* font-weight: bold; */
+    
 }
 #land-navbar
 {
@@ -160,6 +180,18 @@ body
     padding: 10px 20px;
     font-size: 1.2em;
     background-color: rgb(90, 3, 90);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+#button-land-3
+{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #2c3e50;
     color: white;
     text-decoration: none;
     border-radius: 10px;

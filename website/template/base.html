@@ -12,32 +12,19 @@
           {% block nav %}
             <a href="#" class="navbar-logo" align="center">Event Management</a>
             <div class="navbar-container">
-              
-        <!-- <br>
-        <ul class="navbar-links">
-          <li><a  id="base" href="#">Home</a></li>
-          <li><a  id="base" href="{{ url_for('views.about') }}">About</a></li>
-          <li><a  id="base" href="#">Contact Us</a></li>
-          
-        </ul> 
-        <ul class="navbar-links2">
-          <li ><a href="{{ url_for('auth.signup') }}" id="base"> Sign up</a></li>
-          <li ><a href="{{ url_for('auth.login') }}" id="base">login</a></li>
-        </ul> -->
-                    
                       {% if user.is_authenticated %}
-                      <ul class="navbar-links" >
+                      <ul class="nav-left" >
                         <li ><a class="nav-item nav-link" id="base" href="{{ url_for('views.home') }}" >Home</a></li>
                         <li><a class="nav-item nav-link" id="base" href="{{ url_for('auth.logout') }}">Logout</a></li>
                       </ul>
                       {% else %}
-                      <ul class="navbar-links">
+                      <ul class="nav-left">
                         <li ><a class="nav-item nav-link" id="base"
                           href="{{ url_for('views.landing') }}" align="center">Home</a></li>
                         <li><a class="nav-item nav-link" id="base" href="{{ url_for('views.about') }}">About</a></li>
                         <li><a class="nav-item nav-link" id="base" href="{{ url_for('views.contact') }}">Contact Us</a></li>
                       </ul>
-                      <ul class="navbar-links2">
+                      <ul class="nav-right">
                         <li ><a href="{{ url_for('auth.signup') }}" id="base"> Sign up</a></li>
                         <li ><a href="{{ url_for('auth.login') }}" id="base">login</a></li>
                       </ul>
